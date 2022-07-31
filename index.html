@@ -15,7 +15,7 @@
 
 <body>
   <header class="main-header">
-    <a href="index.html" class="main-header-link">
+    <a href="index.html" class="main-header-link image-link">
       <img src="images/avatar.jpg" alt="404 not found" />
     </a>
     <h1 class="main-header-tittle">
@@ -42,68 +42,84 @@
     </section>
     <section class="main-content-section">
       <h3>Recent Works</h3>
-      <article class="recent-works-card">
-        <a href="images/fulls/01.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">Lorem ipsum dolor sit amet</p>
-        <p>
-          consectetur adipiscing elit. Donec ullamcorper, lectus et aliquam
-          iaculis, sapien augue fermentum elit, quis porttitor odio massa a
-          tortor
-        </p>
-      </article>
-      <article class="recent-works-card">
-        <a href="images/fulls/02.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">
-          Phasellus placerat turpis vel rhoncus mollis
-        </p>
-        <p>
-          Vivamus elementum mi nec lectus molestie tristique. Phasellus vel
-          faucibus eros. Nam nec felis finibus, placerat purus in, elementum
-          lorem
-        </p>
-      </article>
-      <article class="recent-works-card">
-        <a href="images/fulls/03.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">
-          Suspendisse enim est, ullamcorper euismod odio vel
-        </p>
-        <p>
-          Nulla aliquet tempus turpis, ac semper leo dictum nec. Morbi
-          eleifend mauris non ipsum blandit, in interdum ex bibendum.
-        </p>
-      </article>
-      <article class="recent-works-card">
-        <a href="images/fulls/04.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">
-          Sed libero magna, sagittis non maximus ac
-        </p>
-        <p>
-          Morbi luctus ipsum in mauris auctor, id mattis sapien mattis. Ut sed
-          tincidunt nulla. Aliquam blandit rutrum leo, quis ullamcorper nisl
-          porta vel
-        </p>
-      </article>
-      <article class="recent-works-card">
-        <a href="images/fulls/05.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">
-          Morbi euismod risus tempus mattis tincidunt
-        </p>
-        <p>
-          Donec placerat, ligula at tempus efficitur, metus velit varius diam,
-          ut consequat arcu augue a nunc. Nunc in mi imperdiet, placerat
-          mauris quis, interdum diam.
-        </p>
-      </article>
-      <article class="recent-works-card">
-        <a href="images/fulls/06.jpg" target="_blank" title="description"></a>
-        <p class="recent-works-card-tittle">
-          Etiam tortor nunc, consectetur ac luctus sed
-        </p>
-        <p>
-          Scelerisque eget erat. Nunc ipsum nulla, congue tristique dui sed,
-          viverra interdum augue
-        </p>
-      </article>
+      <div class="row">
+        <div class="col-2">
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/01.jpg" target="_blank" title="description">
+              <img src="images/thumbs/01.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">Lorem ipsum dolor sit amet</p>
+            <p>
+              consectetur adipiscing elit. Donec ullamcorper, lectus et aliquam
+              iaculis, sapien augue fermentum
+            </p>
+          </article>
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/02.jpg" target="_blank" title="description">
+              <img src="images/thumbs/02.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">
+              Phasellus placerat turpis vel rhoncus mollis
+            </p>
+            <p>
+              Vivamus elementum mi nec lectus molestie tristique. Phasellus vel
+              faucibus eros.
+            </p>
+          </article>
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/03.jpg" target="_blank" title="description">
+              <img src="images/thumbs/03.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">
+              Suspendisse enim est, ullamcorper euismod odio
+            </p>
+            <p>
+              Nulla aliquet tempus turpis, ac semper leo dictum nec. Morbi
+              eleifend mauris non ipsum blandit
+            </p>
+          </article>
+        </div>
+        <div class="col-2">
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/04.jpg" target="_blank" title="description">
+              <img src="images/thumbs/04.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">
+              Sed libero magna, sagittis non maximus ac
+            </p>
+            <p>
+              Morbi luctus ipsum in mauris auctor, id mattis sapien mattis. Ut sed
+              tincidunt nulla. 
+            </p>
+          </article>
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/05.jpg" target="_blank" title="description">
+              <img src="images/thumbs/05.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">
+              Morbi euismod risus tempus mattis tincidunt
+            </p>
+            <p>
+              Donec placerat, ligula at tempus efficitur, metus velit varius diam,
+              ut consequat arcu augue a nunc.
+            </p>
+          </article>
+          <article class="recent-works-card">
+            <a class="image-link" href="images/fulls/06.jpg" target="_blank" title="description">
+              <img src="images/thumbs/06.jpg" title="description">
+            </a>
+            <p class="recent-works-card-tittle">
+              Etiam tortor nunc, consectetur ac luctus sed
+            </p>
+            <p>
+              Scelerisque eget erat. Nunc ipsum nulla, congue tristique dui sed,
+              viverra interdum augue
+            </p>
+          </article>
+        </div>
+      </div>
+
+
       <a href="#" title="see more!" class="button-default">Full Portfólio</a>
     </section>
     <section class="main-content-section">
@@ -342,16 +358,16 @@
       <div class="gallery-image">
         <img src="images/fulls/01.jpg" alt="error 404 not found" />
       </div>
-      <div class="gallery-thumb">
-        <img src="images/thumbs/01.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/02.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/03.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/04.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/05.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/06.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/01.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/02.jpg" alt="error 404 not found" />
-        <img src="images/thumbs/03.jpg" alt="error 404 not found" />
+      <div class="gallery-thumb row">
+        <img class="col-1-3" src="images/thumbs/01.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/02.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/03.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/04.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/05.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/06.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/03.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/02.jpg" alt="error 404 not found" />
+        <img class="col-1-3" src="images/thumbs/01.jpg" alt="error 404 not found" />
       </div>
 
       <h4>Left &amp; Right</h4>
