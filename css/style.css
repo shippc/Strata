@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   border-bottom: 0.9px dotted;
   color: #49bf9d;
+  list-style-type: none;
 }
 
 p {
@@ -79,6 +80,8 @@ ol {
   margin: 0;
   padding: 0;
   list-style-position: inside;
+  list-style-type: none;
+  text-decoration: none;
   padding-left: 1.1em;
 }
 
@@ -319,3 +322,26 @@ textarea {
   margin-left: 2%;
 }
 
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+  left: 0;
+  padding: 0px 54px 72px 0px;
+  box-sizing: border-box;
+  text-align: right;
+
+}
+
+footer ul li a {
+  border-bottom: none;
+  font-size: 18px;
+}
+
+.icon-link {
+  font-size: 25px;
+}
+
+footer {
+  font-size: 12px;
+}
