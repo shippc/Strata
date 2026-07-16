@@ -1,372 +1,595 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Strata</title>
+  <!--=============== SEO ===============-->
+  <meta name="description"
+    content="Strata Front-end Lab: portfólio de estudos em HTML e CSS com projetos, componentes, formulários, tabelas, botões, tipografia e galeria.">
+  <meta name="author" content="Wilhan Mac'Arthur">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <title>Strata Front-end Lab</title>
+
+  <!--=============== BROWSER ===============-->
+  <meta name="theme-color" content="#101b27">
+
+  <!--=============== FONTS & ICONS ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="main-header">
-    <a href="index.html" class="main-header-link image-link">
-      <img src="images/avatar.jpg" alt="404 not found" />
-    </a>
-    <h1 class="main-header-tittle">
-      Trabalhos de <br />
-      <strong>Daniel Taplas Morales</strong>, <br />
-      um empresário que atinge todas as aréas de sucesso.
-    </h1>
-  </header>
-  <main class="main-content">
-    <section class="main-content-section">
-      <h2>Lorem Ipsum</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        ullamcorper, lectus et aliquam iaculis, sapien augue fermentum elit,
-        quis porttitor odio massa a tortor. Duis mattis hendrerit tellus a
-        semper. Nulla convallis porttitor maximus. Cras at bibendum eros.
-        Suspendisse pretium efficitur lectus ut pharetra. Suspendisse auctor
-        sapien tortor, i n lobortis lacus semper a. Nulla hendrerit nunc et
-        magna commodo lobortis. Praesent v olutpat augue id nisi cursus, sed
-        scelerisque lorem dignissim. Nunc nulla sem, convallis non elementum
-        id, molestie in diam.
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!--==================== SIDEBAR ====================-->
+  <aside class="profile-panel" aria-label="Apresentação e navegação">
+    <div class="profile-panel__overlay"></div>
+
+    <div class="profile-panel__content">
+      <a class="profile-avatar" href="#inicio" aria-label="Voltar ao início">
+        <img src="images/avatar.jpg" alt="Foto de perfil de Wilhan Mac'Arthur">
+      </a>
+
+      <p class="profile-eyebrow">Front-end Study Project</p>
+
+      <h1 class="profile-title">
+        Strata
+        <span>Front-end Lab</span>
+      </h1>
+
+      <p class="profile-description">
+        Uma página profissional que reúne exercícios, componentes e projetos
+        desenvolvidos durante meus estudos de HTML e CSS.
       </p>
-      <a href="#" tittle="Veja mais!" class="button-default">Veja mais!</a>
-    </section>
-    <section class="main-content-section">
-      <h3>Recent Works</h3>
-      <div class="row">
-        <div class="col-2">
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/01.jpg" target="_blank" title="description">
-              <img src="images/thumbs/01.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">Lorem ipsum dolor sit amet</p>
-            <p>
-              consectetur adipiscing elit. Donec ullamcorper, lectus et aliquam
-              iaculis, sapien augue fermentum
-            </p>
-          </article>
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/02.jpg" target="_blank" title="description">
-              <img src="images/thumbs/02.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">
-              Phasellus placerat turpis vel rhoncus mollis
-            </p>
-            <p>
-              Vivamus elementum mi nec lectus molestie tristique. Phasellus vel
-              faucibus eros.
-            </p>
-          </article>
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/03.jpg" target="_blank" title="description">
-              <img src="images/thumbs/03.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">
-              Suspendisse enim est, ullamcorper euismod odio
-            </p>
-            <p>
-              Nulla aliquet tempus turpis, ac semper leo dictum nec. Morbi
-              eleifend mauris non ipsum blandit
-            </p>
-          </article>
-        </div>
-        <div class="col-2">
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/04.jpg" target="_blank" title="description">
-              <img src="images/thumbs/04.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">
-              Sed libero magna, sagittis non maximus ac
-            </p>
-            <p>
-              Morbi luctus ipsum in mauris auctor, id mattis sapien mattis. Ut sed
-              tincidunt nulla.
-            </p>
-          </article>
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/05.jpg" target="_blank" title="description">
-              <img src="images/thumbs/05.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">
-              Morbi euismod risus tempus mattis tincidunt
-            </p>
-            <p>
-              Donec placerat, ligula at tempus efficitur, metus velit varius diam,
-              ut consequat arcu augue a nunc.
-            </p>
-          </article>
-          <article class="recent-works-card">
-            <a class="image-link" href="images/fulls/06.jpg" target="_blank" title="description">
-              <img src="images/thumbs/06.jpg" title="description">
-            </a>
-            <p class="recent-works-card-tittle">
-              Etiam tortor nunc, consectetur ac luctus sed
-            </p>
-            <p>
-              Scelerisque eget erat. Nunc ipsum nulla, congue tristique dui sed,
-              viverra interdum augue
-            </p>
-          </article>
-        </div>
+
+      <nav class="profile-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <a href="#laboratorio">Laboratório</a>
+        <a href="#galeria">Galeria</a>
+      </nav>
+
+      <div class="profile-actions">
+        <a class="button button--primary" href="https://wilithagency.netlify.app/" target="_blank"
+          rel="noopener noreferrer">
+          Conheça meu trabalho
+        </a>
+
+        <a class="button button--ghost-dark" href="https://github.com/shippc" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
       </div>
 
+      <ul class="social-list" aria-label="Redes sociais">
+        <li>
+          <a href="https://github.com/shippc" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub de Wilhan Mac'Arthur">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
 
-      <a href="#" title="see more!" class="button-default">Full Portfólio</a>
-    </section>
-    <section class="main-content-section">
-      <h3>Get in Touch</h3>
-      <p>
-        Donec egestas sit amet nunc quis elementum. Vivamus quam elit,
-        vestibulum eu maximus at, placerat eu nulla. Sed pharetra, mi vitae
-        vehicula dignissim, dui mauris venenatis neque, in laoreet orci nulla
-        sit amet sapien.
+        <li>
+          <a href="https://www.linkedin.com/in/wilhanmacarthur/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn de Wilhan Mac'Arthur">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://wilithagency.netlify.app/" target="_blank" rel="noopener noreferrer"
+            aria-label="Site da Wilith Agency">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!--==================== MAIN ====================-->
+  <main class="page-content" id="conteudo">
+    <!--==================== HERO ====================-->
+    <section class="hero section" id="inicio">
+      <div class="section-kicker">HTML • CSS • UI Components</div>
+
+      <h2 class="hero-title">
+        Estudos transformados em uma
+        <span>experiência profissional.</span>
+      </h2>
+
+      <p class="hero-description">
+        Este projeto reúne exemplos de tipografia, formulários, tabelas,
+        botões, listas, cards, galeria e responsividade em uma única página
+        organizada como um laboratório de front-end.
       </p>
 
-      <div class="row">
-        <div class="col-2-3">
-          <form action="#" method="POST">
-            <div class="row">
-              <div class="col-2">
-                <label for="name">Name</label>
-                <input placeholder="Name" type="text" name="name" id="name" />
+      <div class="hero-actions">
+        <a class="button button--primary" href="#projetos">Explorar projetos</a>
+        <a class="button button--outline" href="#laboratorio">Ver componentes</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Resumo do projeto">
+        <article>
+          <strong>06</strong>
+          <span>Projetos visuais</span>
+        </article>
+
+        <article>
+          <strong>08+</strong>
+          <span>Tipos de componentes</span>
+        </article>
+
+        <article>
+          <strong>100%</strong>
+          <span>HTML e CSS</span>
+        </article>
+      </div>
+    </section>
+
+    <!--==================== PROJECTS ====================-->
+    <section class="section" id="projetos">
+      <header class="section-header">
+        <div>
+          <p class="section-kicker">Portfólio de estudos</p>
+          <h2 class="section-title">Projetos recentes</h2>
+        </div>
+
+        <p class="section-description">
+          Exercícios visuais utilizados para praticar composição, imagens,
+          hierarquia de conteúdo e construção de cards responsivos.
+        </p>
+      </header>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/01.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/01.jpg" alt="Paisagem natural utilizada como estudo de composição visual"
+              loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">Layout visual</p>
+            <h3>Composição com paisagem</h3>
+            <p>Estudo de enquadramento, proporção de imagem e organização de conteúdo em card.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/02.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/02.jpg" alt="Imagem urbana utilizada em um exercício de layout" loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">Cards</p>
+            <h3>Hierarquia e contraste</h3>
+            <p>Aplicação de títulos, descrições e espaçamento para melhorar a leitura dentro de componentes.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/03.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/03.jpg" alt="Fotografia utilizada em estudo de galeria responsiva" loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">Responsividade</p>
+            <h3>Galeria adaptável</h3>
+            <p>Organização de imagens em grade fluida para desktop, tablet e smartphone.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/04.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/04.jpg" alt="Imagem utilizada para praticar estados de interação" loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">Interação</p>
+            <h3>Estados de hover</h3>
+            <p>Efeitos suaves de movimento, sobreposição e foco aplicados sem JavaScript.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/05.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/05.jpg" alt="Imagem utilizada em exercício de grid" loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">CSS Grid</p>
+            <h3>Organização modular</h3>
+            <p>Distribuição consistente de cards utilizando colunas modernas e espaços reutilizáveis.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-card__image" href="images/fulls/06.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/thumbs/06.jpg" alt="Fotografia utilizada para estudo de interface" loading="lazy">
+            <span>Visualizar imagem</span>
+          </a>
+          <div class="project-card__content">
+            <p class="project-card__tag">Interface</p>
+            <h3>Consistência visual</h3>
+            <p>Padronização de bordas, tipografia, cores e espaçamentos em uma interface completa.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-actions">
+        <a class="button button--outline" href="https://github.com/shippc" target="_blank" rel="noopener noreferrer">
+          Ver portfólio completo
+        </a>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="section contact-section" id="contato">
+      <header class="section-header">
+        <div>
+          <p class="section-kicker">Entre em contato</p>
+          <h2 class="section-title">Vamos conversar?</h2>
+        </div>
+        <p class="section-description">
+          Formulário demonstrativo desenvolvido para praticar campos,
+          validação visual, estados de foco e organização responsiva.
+        </p>
+      </header>
+
+      <div class="contact-layout">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="contact-name">Nome</label>
+              <input type="text" id="contact-name" name="contact-name" placeholder="Seu nome" autocomplete="name"
+                required>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">E-mail</label>
+              <input type="email" id="contact-email" name="contact-email" placeholder="voce@email.com"
+                autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-message">Mensagem</label>
+            <textarea id="contact-message" name="contact-message" placeholder="Conte um pouco sobre o seu projeto..."
+              rows="6" required></textarea>
+          </div>
+
+          <button class="button button--primary" type="submit">Enviar mensagem</button>
+        </form>
+
+        <address class="contact-card">
+          <div class="contact-card__item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <div>
+              <strong>Localização</strong>
+              <span>Espírito Santo, Brasil</span>
+            </div>
+          </div>
+
+          <div class="contact-card__item">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:contato@wilithagency.com">contato@wilithagency.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card__item">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <div>
+              <strong>Portfólio</strong>
+              <a href="https://wilithagency.netlify.app/" target="_blank" rel="noopener noreferrer">
+                wilithagency.netlify.app
+              </a>
+            </div>
+          </div>
+        </address>
+      </div>
+    </section>
+
+    <!--==================== COMPONENT LAB ====================-->
+    <section class="section component-lab" id="laboratorio">
+      <header class="section-header">
+        <div>
+          <p class="section-kicker">Biblioteca visual</p>
+          <h2 class="section-title">Laboratório de componentes</h2>
+        </div>
+        <p class="section-description">
+          Os exemplos originais foram preservados e reorganizados como uma pequena biblioteca de interface.
+        </p>
+      </header>
+
+      <article class="demo-card">
+        <header class="demo-card__header">
+          <span>01</span>
+          <div>
+            <p>Fundamentos</p>
+            <h3>Tipografia e conteúdo</h3>
+          </div>
+        </header>
+
+        <div class="demo-card__body typography-demo">
+          <h1>Título de nível 1</h1>
+          <h2>Título de nível 2</h2>
+          <h3>Título de nível 3</h3>
+          <h4>Título de nível 4</h4>
+          <h5>Título de nível 5</h5>
+          <h6>Título de nível 6</h6>
+
+          <p>
+            Este parágrafo demonstra texto corrido com <strong>conteúdo em destaque</strong>,
+            <em>ênfase visual</em>, exemplo de H<sub>2</sub>O e potência 10<sup>2</sup>.
+          </p>
+
+          <blockquote cite="https://developer.mozilla.org/">
+            <p>“Uma boa interface organiza o conteúdo antes de adicionar efeitos visuais.”</p>
+            <cite>Estudo de estrutura e semântica</cite>
+          </blockquote>
+
+          <p>Código em linha: <code>display: grid;</code></p>
+
+          <pre><code>&lt;article class="card"&gt;
+  &lt;h3&gt;Componente reutilizável&lt;/h3&gt;
+  &lt;p&gt;Conteúdo do card.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <header class="demo-card__header">
+          <span>02</span>
+          <div>
+            <p>Organização</p>
+            <h3>Listas e ícones</h3>
+          </div>
+        </header>
+
+        <div class="demo-card__body lists-grid">
+          <div>
+            <h4>Lista não ordenada</h4>
+            <ul class="demo-list">
+              <li>HTML semântico</li>
+              <li>CSS moderno</li>
+              <li>Design responsivo</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Lista ordenada</h4>
+            <ol class="demo-list demo-list--ordered">
+              <li>Planejar a estrutura</li>
+              <li>Construir os componentes</li>
+              <li>Testar a responsividade</li>
+            </ol>
+          </div>
+
+          <div>
+            <h4>Lista alternativa</h4>
+            <ul class="alternate-list">
+              <li>Componentes reutilizáveis</li>
+              <li>Estados de interação</li>
+              <li>Acessibilidade básica</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Ícones sociais</h4>
+            <ul class="icon-demo-list">
+              <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <header class="demo-card__header">
+          <span>03</span>
+          <div>
+            <p>Dados</p>
+            <h3>Tabela responsiva</h3>
+          </div>
+        </header>
+
+        <div class="demo-card__body">
+          <div class="table-wrapper">
+            <table class="demo-table">
+              <caption>Exemplo de itens e valores</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Descrição</th>
+                  <th scope="col">Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Item One</td>
+                  <td>Componente básico de interface.</td>
+                  <td>R$ 29,99</td>
+                </tr>
+                <tr>
+                  <td>Item Two</td>
+                  <td>Elemento visual com variação.</td>
+                  <td>R$ 19,99</td>
+                </tr>
+                <tr>
+                  <td>Item Three</td>
+                  <td>Estrutura responsiva reutilizável.</td>
+                  <td>R$ 29,99</td>
+                </tr>
+                <tr>
+                  <td>Item Four</td>
+                  <td>Componente com estados de foco.</td>
+                  <td>R$ 19,99</td>
+                </tr>
+                <tr>
+                  <td>Item Five</td>
+                  <td>Exemplo final da tabela.</td>
+                  <td>R$ 29,99</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="2" scope="row">Total</th>
+                  <td>R$ 129,95</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <header class="demo-card__header">
+          <span>04</span>
+          <div>
+            <p>Ações</p>
+            <h3>Botões e variações</h3>
+          </div>
+        </header>
+
+        <div class="demo-card__body button-showcase">
+          <div class="button-row">
+            <button class="button button--primary" type="button">Primário</button>
+            <button class="button button--outline" type="button">Secundário</button>
+          </div>
+
+          <div class="button-row">
+            <button class="button button--primary button--small" type="button">Pequeno</button>
+            <button class="button button--outline button--small" type="button">Pequeno</button>
+          </div>
+
+          <div class="button-row button-row--full">
+            <button class="button button--primary button--full" type="button">Botão com largura total</button>
+            <button class="button button--outline button--full" type="button">Botão alternativo</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="demo-card">
+        <header class="demo-card__header">
+          <span>05</span>
+          <div>
+            <p>Interação</p>
+            <h3>Formulário completo</h3>
+          </div>
+        </header>
+
+        <div class="demo-card__body">
+          <form class="demo-form" action="#" method="post">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="demo-name">Nome</label>
+                <input type="text" id="demo-name" name="demo-name" placeholder="Digite seu nome">
               </div>
-              <div class="col-2">
-                <label for="email">Email</label>
-                <input placeholder="Email" type="text" name="email" id="email" />
+              <div class="form-field">
+                <label for="demo-email">E-mail</label>
+                <input type="email" id="demo-email" name="demo-email" placeholder="Digite seu e-mail">
               </div>
             </div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="Send" class="button-default button-stroke button-default-gig" />
+
+            <div class="form-field">
+              <label for="demo-subject">Assunto</label>
+              <select id="demo-subject" name="demo-subject">
+                <option value="">Selecione</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="responsive">Responsividade</option>
+              </select>
+            </div>
+
+            <fieldset class="option-group">
+              <legend>Prioridade</legend>
+              <label><input type="radio" value="low" name="priority"> Baixa</label>
+              <label><input type="radio" value="medium" name="priority"> Média</label>
+              <label><input type="radio" value="high" name="priority"> Alta</label>
+            </fieldset>
+
+            <fieldset class="option-group">
+              <legend>Preferências</legend>
+              <label><input type="checkbox" name="copy" value="1"> Enviar uma cópia</label>
+              <label><input type="checkbox" name="human" value="1"> Confirmo que sou humano</label>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="demo-message">Mensagem</label>
+              <textarea id="demo-message" name="demo-message" placeholder="Escreva sua mensagem" rows="6"></textarea>
+            </div>
+
+            <div class="button-row">
+              <button class="button button--primary" type="submit">Enviar</button>
+              <button class="button button--outline" type="reset">Limpar</button>
+            </div>
           </form>
         </div>
-        <div class="col-1-3">
-          <address>
-            <p>
-              <span>Adress</span>
-              1234 Somewhere Rd. Nashville, TN 000000 United States
-            </p>
-            <p>
-              <span>Telefone</span>
-              000-000-000
-            </p>
-            <p>
-              <span>Email</span>
-              email@server.com
-            </p>
-          </address>
-        </div>
-      </div>
-
-
-
-    </section>
-    <section class="main-content-section">
-      <h3>Elements</h3>
-
-      <h4>Text</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        aliquam elit eget risus porttitor convallis. Sed quis dolor in lorem
-        molestie blandit a eu sapien. Quisque aliquam felis lorem, vehicula
-        fringilla neque gravida at. Proin sed ex iaculis odio fermentum
-        hendrerit. Ut vulputate tortor vitae libero tristique dignissim.
-        Phasellus lacinia nec odio sit amet mattis. Duis posuere vehicula
-        tortor.
-      </p>
-
-      <blockquote cite="http://developer.mozilla.org">
-        <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
-      </blockquote>
-
-      <h4>Preformatado</h4>
-
-      <h4>Lists</h4>
-      <div class="row">
-        <div class="col-6">
-          <h5>Não ordenada</h5>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-
-          <h5>Ordenada</h5>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <h5>Alernate</h5>
-          <ul class="ul-alternate">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-
-          <h5>Icons</h5>
-          <ul class="ul-icons">
-            <li>
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </li>
-            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-
-      <h4>Table</h4>
-      <h5>Default</h5>
-
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <td colspan="2"></td>
-            <td>100.00</td>
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr>
-            <td>Item One</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Two</td>
-            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Three</td>
-            <td>Morbi faucibus arcu accumsan lorem.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Four</td>
-            <td>Vitae integer tempus condimentum.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Five</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h5>Buttons</h5>
-      <p>
-        <button class="button-default">Default</button>
-        <button class="button-default button-stroke">Default</button>
-      </p>
-      <p>
-        <button class="button-default button-small">Default</button>
-        <button class="button-default button-small button-stroke">
-          Default
-        </button>
-      </p>
-      <p>
-        <button class="button-default button-full">Default</button>
-        <button class="button-default button-full button-stroke">
-          Default
-        </button>
-      </p>
-      <input type="submit" class="button-default" value="send" />
-
-      <h5>Forms</h5>
-
-      <label form="name">Name</label>
-      <input type="text" name="name" id="name" />
-
-      <label form="email">Email</label>
-      <input type="text" name="email" id="email" />
-
-      <select>
-        <option value="0">Selecione</option>
-        <option value="1">HTML</option>
-        <option value="2">CSS</option>
-      </select>
-
-      <label>
-        <input type="radio" value="low" name="priority" />Low Priority
-      </label>
-      <label>
-        <input type="radio" value="medium" name="priority" />Medium Priority
-      </label>
-      <label>
-        <input type="radio" value="high" name="priority" />High Priority
-      </label>
-
-      <label>
-        <input type="checkbox" name="copy" value="1" />Send me one copy
-      </label>
-
-      <label>
-        <input type="checkbox" name="human" value="1" />I'm human
-      </label>
-
-      <label for="msg">Message:</label>
-      <textarea placeholder="Text something" id="message"></textarea>
-
-      <input type="submit" class="button-default button-stroke" value="send" />
-      <input type="submit" class="button-default button-stroke" value="clear" />
+      </article>
     </section>
 
-    <section class="main-content-section">
-      <h3>Images</h3>
+    <!--==================== GALLERY ====================-->
+    <section class="section" id="galeria">
+      <header class="section-header">
+        <div>
+          <p class="section-kicker">Estudo de imagens</p>
+          <h2 class="section-title">Galeria responsiva</h2>
+        </div>
+        <p class="section-description">
+          Exercício de composição com imagem principal e miniaturas adaptáveis.
+        </p>
+      </header>
 
-      <div class="gallery-image">
-        <img src="images/fulls/01.jpg" alt="error 404 not found" />
-      </div>
-      <div class="gallery-thumb row">
-        <img class="col-1-3" src="images/thumbs/01.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/02.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/03.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/04.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/05.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/06.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/03.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/02.jpg" alt="error 404 not found" />
-        <img class="col-1-3" src="images/thumbs/01.jpg" alt="error 404 not found" />
+      <div class="gallery-feature">
+        <img src="images/fulls/01.jpg" alt="Imagem principal da galeria de estudos" loading="lazy">
       </div>
 
-
+      <div class="gallery-grid">
+        <a href="images/fulls/01.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/01.jpg"
+            alt="Miniatura 1 da galeria" loading="lazy"></a>
+        <a href="images/fulls/02.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/02.jpg"
+            alt="Miniatura 2 da galeria" loading="lazy"></a>
+        <a href="images/fulls/03.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/03.jpg"
+            alt="Miniatura 3 da galeria" loading="lazy"></a>
+        <a href="images/fulls/04.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/04.jpg"
+            alt="Miniatura 4 da galeria" loading="lazy"></a>
+        <a href="images/fulls/05.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/05.jpg"
+            alt="Miniatura 5 da galeria" loading="lazy"></a>
+        <a href="images/fulls/06.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/06.jpg"
+            alt="Miniatura 6 da galeria" loading="lazy"></a>
+        <a href="images/fulls/03.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/03.jpg"
+            alt="Miniatura 7 da galeria" loading="lazy"></a>
+        <a href="images/fulls/02.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/02.jpg"
+            alt="Miniatura 8 da galeria" loading="lazy"></a>
+        <a href="images/fulls/01.jpg" target="_blank" rel="noopener noreferrer"><img src="images/thumbs/01.jpg"
+            alt="Miniatura 9 da galeria" loading="lazy"></a>
+      </div>
     </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="site-footer">
+      <p>&copy; 2026 Strata Front-end Lab. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/wilhanmacarthur/" target="_blank" rel="noopener noreferrer">
+          Wilhan Mac'Arthur
+        </a>
+      </p>
+    </footer>
   </main>
-  <footer class="main-footer">
-    <ul class="ul-icons">
-      <li><a href="#" class="icon-link"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#" class="icon-link"><i class="fa fa-facebook-square"></i></a></li>
-    </ul>
-    <ul class="ul-icons">
-      <li>&copy; Copyright <strong>Strata.</strong> All Rights Reserved</li>
-      <li> Design by <a href="github.com/shippc" target="_blank"><strong>Wilhan Mac'Arthur</strong></a></li>
-
-    </ul>
-
-  </footer>
 </body>
 
 </html>
